@@ -1,0 +1,14 @@
+.dark-back {
+    height: 50px;
+    background-color: #252e26d5;
+    a {
+        color: #fff;
+        text-shadow: 0px 10px 10px #889977;
+    }
+}
+
+.back {
+    background-color: #889977;
+    @include dropShadeBox(#252e26, #888);
+    height: 50vh;
+}

@@ -1,0 +1,32 @@
+@mixin dropShade ($shadeColor, $outline) {
+    text-shadow: -1px -1px 10px $shadeColor, 1px 1px 5px $shadeColor, 0px 10px 10px $outline;
+}
+
+@mixin dropShadeBox ($shadeColor, $outline) {
+    box-shadow: -1px -1px 10px $shadeColor, 1px 1px 5px $shadeColor, 0px 10px 10px $outline;
+}
+
+@mixin bp-large {
+    @media only screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+  
+@mixin bp-medium {
+    @media only screen and (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin bp-small {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin bp-custom($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+

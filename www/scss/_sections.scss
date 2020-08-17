@@ -1,0 +1,106 @@
+.navFollowing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #889977;
+    background: url("../images/jfback.jpg");
+    background-position: left;
+    background-attachment: fixed;
+    h1 {
+        @include dropShade(#889977, #252e26);
+        font-size: 3em;
+        text-align: center;
+        transition: .5s;
+        &:hover {
+            font-size: 5em;
+        }
+    }
+}
+%section {
+    width: 100%;
+}
+
+#projects {
+    @extend %section;
+    height: 100vh;
+    .py .column-2 {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1em;
+        @include bp-medium {
+            height: auto;
+            justify-content: space-around;
+        }
+        & + .column-2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1em;
+            background-color: #887799;
+            @include bp-medium {
+                height: auto;
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+
+    .projContainerLeft {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        h1 {
+            font-size: 2em;
+            padding-bottom: .5em;
+            @include dropShade(#fff, #666);
+        }
+    }
+    .projContainerRight {
+        display:flex;
+        flex-direction: column;
+        width: 75%;
+        h1 {
+            font-size: 2em;
+            padding-bottom: .5em;
+            @include dropShade(#fff, #666);
+        }
+        .paradise {
+            margin: 200px;
+        }
+    }
+    
+    @include bp-medium {
+        height: auto;
+    }
+}
+
+#contact {
+    @extend %section;
+    height: 100vh;
+}
+
+.box-this {
+    background-color: #fff;
+    max-width: 350px;
+    min-width: 350px;
+    margin: 1em;
+    height: 350px;
+}
+
+.proj-scroller {
+    background-color: rgba(255, 255, 255, 0.397);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid black;
+    @include bp-medium {
+        height: 300px;
+        margin: 2em;
+    }
+}

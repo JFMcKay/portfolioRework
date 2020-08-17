@@ -1,0 +1,28 @@
+h1 {
+    font-family: $ultra;
+
+    // text-shadow: -1px -1px 10px #889977, 1px 1px 5px #889977, 0px 10px 10px #252e26;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    color: #fff;
+    background-color: #252e26;
+    p {
+        @include dropShade(#889977, #252e26);
+    }
+}
+img {
+    border-radius: 2px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}

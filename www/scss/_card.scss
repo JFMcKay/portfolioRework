@@ -1,0 +1,60 @@
+// Profile card code
+div.profile-card {
+    position: absolute;
+    width: 450px;
+    transition: .5s;
+    display: none;
+    flex-direction: column;
+    border-radius: 0 15px 15px 0;  
+    @include dropShadeBox(#889977, #252e26);
+    .cover-photo {
+        border-radius: 0 15px 0 0;
+        background: rgb(136,153,119);
+        background: linear-gradient(180deg, rgba(136,153,119,1) 25%, rgba(37,46,38,1) 50%);
+        width: 450px;
+        height: 100px;
+    }    
+    .profile-photo {
+        background: rgb(136,153,119);
+        background: linear-gradient(180deg,  rgba(37,46,38,1) 50%, rgba(136,153,119,1) 100%);
+        width: 450px;
+        height: 100px; 
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100px;
+            height: 100px;
+            background-color: #999;
+            position: relative;
+            top: -50px;
+            border-radius: 50%;
+        }
+    }
+    .card-content {
+        background-color: #fff;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            font-size: 1em;
+        }
+    }
+    .social {
+        color: white;
+        background: rgb(136,153,119);
+        background: linear-gradient(180deg, rgba(136,153,119,1) 50%, rgba(37,46,38,1) 100%);
+        width: 450px;
+        border-radius: 0 0 15px 0;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+div.profile-show {
+    display: flex;
+    width: 450px;
+}
